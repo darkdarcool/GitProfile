@@ -7,9 +7,4 @@ def hello_world():
 		'index.html',
 		user_name=os.environ["REPL_OWNER"]
 	)
-@app.route('/style')
-def styleshow():
-  return render_template(
-    'styles/style.css'
-  )
 app.run(host='0.0.0.0', port=8080)
