@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+	<title>Repl Auth</title>
+  <style src = "/style"></style>
+</head>
+<body>
+	{% if user_name %}
+	<h1>Hello, {{ user_name }}!</h1>
+	<p>Your user id is {{ user_id }}.</p>
+	{% else %}
+	<h1> An error has occured in the repl find auth
+	{% endif %}
+</body>
+</html>
